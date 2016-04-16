@@ -13,13 +13,11 @@ $ npm install --save screenshot-promise
 ## Usage
 
 ```js
-var fs = require('fs');
-var screenshotPromise = require('screenshot-promise');
+const fs = require('fs');
+const screenshotPromise = require('screenshot-promise');
 
 screenshotPromise('http://google.com', '1024x768', {crop: true})
-	.then(function (buf) {
-		fs.writeFileSync('google.com-1024x768.png', buf);
-	});
+	.then(buf => fs.writeFileSync('google.com-1024x768.png', buf));
 ```
 
 

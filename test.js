@@ -1,13 +1,7 @@
-'use strict';
-var isPng = require('is-png');
-var test = require('ava');
-var screenshotPromise = require('./');
+import isPng from 'is-png';
+import test from 'ava';
+import m from './';
 
-test('generate screenshot', function (t) {
-	t.plan(1);
-
-	screenshotPromise('http://yeoman.io', '1024x768')
-		.then(function (buf) {
-			t.assert(isPng(buf));
-		});
+test('generate screenshot', async t => {
+	t.true(isPng(await m('http://yeoman.io', '1024x768')));
 });
