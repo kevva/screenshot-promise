@@ -16,14 +16,15 @@ $ npm install --save screenshot-promise
 const fs = require('fs');
 const screenshotPromise = require('screenshot-promise');
 
-screenshotPromise('http://google.com', '1024x768', {crop: true})
-	.then(buf => fs.writeFileSync('google.com-1024x768.png', buf));
+screenshotPromise('http://google.com', '1024x768', {crop: true}).then(buf => {
+	fs.writeFileSync('google.com-1024x768.png', buf);
+});
 ```
 
 
 ## API
 
-Same as in [screenshot-stream](https://github.com/kevva/screenshot-stream), but with promisified methods.
+See [screenshot-stream](https://github.com/kevva/screenshot-stream).
 
 
 ## License
