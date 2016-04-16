@@ -31,8 +31,8 @@
     "url"
   ],
   "dependencies": {
-    "screenshot-stream": "^1.3.2",
-    "stream-to-promise": "^1.0.4"
+    "get-stream": "^2.0.0",
+    "screenshot-stream": "^1.3.2"
   },
   "devDependencies": {
     "ava": "*",

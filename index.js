@@ -1,8 +1,7 @@
 'use strict';
+var getStream = require('get-stream');
 var screenshotStream = require('screenshot-stream');
-var streamToPromise = require('stream-to-promise');
 
 module.exports = function (url, size, opts) {
-	opts = opts || {};
-	return streamToPromise(screenshotStream(url, size, opts));
+	return getStream.buffer(screenshotStream(url, size, opts));
 };
