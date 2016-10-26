@@ -29,4 +29,4 @@ See [screenshot-stream](https://github.com/kevva/screenshot-stream).
 
 ## License
 
-MIT © [Kevin Martensson](http://github.com/kevva)
+MIT © [Kevin Martensson](https://github.com/kevva)

@@ -10,7 +10,7 @@
     "url": "github.com/kevva"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
@@ -38,5 +38,8 @@
     "ava": "*",
     "is-png": "^1.0.0",
     "xo": "*"
+  },
+  "xo": {
+    "esnext": true
   }
 }

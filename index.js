@@ -1,7 +1,5 @@
 'use strict';
-var getStream = require('get-stream');
-var screenshotStream = require('screenshot-stream');
+const getStream = require('get-stream');
+const screenshotStream = require('screenshot-stream');
 
-module.exports = function (url, size, opts) {
-	return getStream.buffer(screenshotStream(url, size, opts));
-};
+module.exports = (url, size, opts) => getStream.buffer(screenshotStream(url, size, opts));
